@@ -33,10 +33,10 @@
 
 % german language
 \usepackage{polyglossia}
-\setdefaultlanguage{german}
+\setdefaultlanguage{english}
 
 % for english abstract and english titles in the toc
-\setotherlanguages{english}
+%\setotherlanguages{english}
 
 % intelligent quotation marks, language and nesting sensitive
 \usepackage[autostyle]{csquotes}
@@ -132,18 +132,24 @@
 %-------------------------    Angaben zur Arbeit   ----------------------------
 %------------------------------------------------------------------------------
 
-\author{Mira Sophie Arndt}
-\title{Charakterisierung des Wachstums dünner MgO-Filme auf Fe(100)}
-\date{2021}
-\birthplace{Unna}
-\chair{Lehrstuhl für Experimentelle Physik VI}
-\division{Fakultät Physik}
-\thesisclass{Bachelor of Science}
-\submissiondate{17. August 2021}
-\firstcorrector{Prof.~Dr.~Mirko Cinchetti}
-\secondcorrector{Prof.~Dr.~Markus Betz}
-\thesisbetreuer{David~Janas}
-\secondthesisbetreuer{Dr.~Giovanni~Zamborlini}
+%\author{David Gutnikov \and Mira Sophie Arndt}
+\author{%
+  David Gutnikov\\%
+  \href{mailto:david.gutnikov@tu-dortmund.de}{david.gutnikov@tu-dortmund.de} \and
+  Mira Arndt\\
+  \href{mailto:mira.arndt@tu-dortmund.de}{mira.arndt@tu-dortmund.de}%
+}
+\title{ARBEITSTITEL}
+\date{2022}
+%\birthplace{Unna}
+\chair{AG Cinchetti}
+\division{Department of Physics}
+%\thesisclass{Lab Report}
+%\submissiondate{04. 11. 2022}
+%\firstcorrector{Prof.~Dr.~Mirko Cinchetti}
+%\secondcorrector{Prof.~Dr.~Markus Betz}
+%\thesisbetreuer{David~Janas}
+%\secondthesisbetreuer{Dr.~Giovanni~Zamborlini}
 
 
 % tu logo on top of the titlepage
@@ -155,7 +161,7 @@
 \maketitle
 
 % Gutachterseite
-\makecorrectorpage
+%\makecorrectorpage
 
 % hier beginnt der Vorspann, nummeriert in römischen Zahlen
 %\input{content/00_abstract.tex}
@@ -163,13 +169,16 @@
 
 \mainmatter
 % Hier beginnt der Inhalt mit Seite 1 in arabischen Ziffern
-\input{content/01_Einleitung.tex}
-\input{content/01_Grundlagen.tex}
-\input{content/01_Methoden.tex}
+%\input{content/01_Einleitung.tex}
+%\input{content/01_Grundlagen.tex}
+%\input{content/01_Methoden.tex}
 %\input{content/01_Preperationskammer.tex}
-\input{content/01_Ergebnisse.tex}
-\input{content/01_Zusammenfassung_und_Ausblick.tex}
-
+%\input{content/01_Ergebnisse.tex}
+%\input{content/01_Zusammenfassung_und_Ausblick.tex}
+\input{content/Introduction.tex}
+\input{content/Methods.tex}
+\input{content/Results.tex}
+\input{content/Conclusions.tex}
 
 
 
@@ -185,7 +194,7 @@
 %\input{content/a_anhang.tex}
 \backmatter
 \printbibliography
-\input{content/01_Danksagung.tex}
+%\input{content/01_Danksagung.tex}
 
 \cleardoublepage
 \includepdf{Plots/scan0004}

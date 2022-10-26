@@ -85,8 +85,8 @@
 \newcommand\secondthesisbetreuer[1]{\renewcommand\thesecondthesisbetreuer{#1}}
 
 % set title page elements
-\subject{Arbeit zur Erlangung des akademischen Grades\\ \thethesisclass}
-\publishers{\thechair \\ \thedivision \\ Technische Universität Dortmund}
+\subject{Lab report\\ \thethesisclass}
+\publishers{\thechair \\ \thedivision \\ TU Dortmund}
 
 % page for the correctors
 \newcommand{\makecorrectorpage}{%
