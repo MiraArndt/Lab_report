@@ -1,4 +1,6 @@
 build/
 *.swp
 *.pdf
+**/.DS_Store
+.DS_Store
 

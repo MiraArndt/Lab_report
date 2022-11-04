@@ -1,11 +1,13 @@
 all: build/thesis.pdf
 
+.PRECIOUS: build/thesis.pdf
 
-TeXOptions = -lualatex \
-			 -interaction=nonstopmode \
-			 -halt-on-error \
+TeXOptions = -pvc
+			 -lualatex \
 			 -output-directory=build
-                                                                                
+	  	     -interaction=errorstopmode \
+
+
 build/thesis.pdf: FORCE | build
 	latexmk $(TeXOptions) thesis.tex
 	
