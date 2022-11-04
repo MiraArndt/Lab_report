@@ -2,9 +2,9 @@ all: build/thesis.pdf
 
 .PRECIOUS: build/thesis.pdf
 
-TeXOptions = -pvc
+TeXOptions = -pvc \
 			 -lualatex \
-			 -output-directory=build
+			 -output-directory=build \
 	  	     -interaction=errorstopmode \
 
 
